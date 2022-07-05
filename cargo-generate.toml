@@ -1,0 +1,34 @@
+[template]
+cargo_generate_version = ">=0.15.2"
+include = ["*.rs", "**/.config/, "**/.docker/", "**/.github/"]
+exclude = ["**/target/", "**/.idea/", "**/.vscode/", "**/debug/", "**/.docker/data/"]
+
+[placeholders.description]
+default = ""
+prompt = "description:"
+type = "string"
+
+[placeholders.edition]
+default = "2021"
+prompt = "edition:"
+type = "string"
+
+[placeholders.spdx-license]
+default = "MIT"
+prompt = "license (SPDX)"
+type = "string"
+
+[placeholders.publish]
+default = true
+prompt = "publish"
+type = "bool"
+
+[placeholders.readme]
+default = "README.md"
+prompt = "readme"
+type = "string"
+
+[placeholders.gh_user]
+default = ""
+prompt = "github username"
+type = "string"
